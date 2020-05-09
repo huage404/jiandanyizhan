@@ -12,6 +12,7 @@ a,a:hover{
 /* style */
 body{
     background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    background-size: 120%;
 }
 
 .globalHeader{
@@ -49,6 +50,7 @@ body{
     font-size: 16px;
     border-radius: 30px;
     cursor: pointer;
+    outline: none;
 }
 
 
@@ -132,6 +134,11 @@ body{
 
 
 @media (min-width:600px){
+    body{
+        background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+        background-size: 120%;
+        animation: yidong 10s linear infinite;
+    }
     .globalHeader{
         margin-top: 200px;
     }
@@ -186,5 +193,20 @@ body{
     }
     .siteList .addButton:hover{
         box-shadow: 0 0 10px #424cd4;
+    }
+}
+
+@keyframes yidong{
+    0%{
+        background-size: 120%;
+        background-position: bottom left;
+    }
+    50%{
+        background-size: 120%;
+        background-position: center center;
+    }
+    50%{
+        background-size: 120%;
+        background-position: top right;
     }
 }
